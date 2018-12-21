@@ -24,11 +24,11 @@ class Number extends Component {
         const { num } = this.props;
         //console.log("From the props -", this.props);
         return (
-            <div>
-                <div className="row col-sm-offset-5">
+            <div style={{ textAlign: "center" }}>
+                <div className="container">
                     <p className="lead">{num}</p>
                 </div>
-                <div className="row col-sm-offset-4">
+                <div className="container">
                     <button
                         className="btn btn-primary"
                         onClick={this.onIncrement}
@@ -51,7 +51,7 @@ class Number extends Component {
 // Getting Props from State on settingReducer.js
 const mapStateToProps = state => {
     console.log(
-        "mapStateToProps - Number.js (Reading initial data from state value) -",
+        "mapStateToProps - Number Component (Reading initial data from state value) -",
         state,
         "\n",
         "──────────────────────────────────────────────────────────────────────"
